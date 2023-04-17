@@ -19,5 +19,7 @@ public class EnemyController : MonoBehaviour
             UnityEngine.Random.Range(0,1f),
             UnityEngine.Random.Range(0,1f));
         _material.color = newColor;
+        
+        ARController.Instance.OffTrackVision();
     }
 }
